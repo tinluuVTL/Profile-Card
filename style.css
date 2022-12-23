@@ -1,0 +1,161 @@
+/**
+*  @project  Responsive Profile Card
+*  @author   Jamshid Elmi
+*  @created  2022-05-11 10:44:54
+*  @modified 2022-05-11 10:44:54
+*  @tutorial https://youtu.be/8aWs87UgwSg
+*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #444;
+  margin: 0;
+  font-size: 18px;
+  padding: auto 20px;
+  background: linear-gradient(-20deg, #F24, #64F);
+  transform: scale(0.8);
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+.card {
+  width: 100%;
+  max-width: 700px;
+  background: #FFF;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 60px -10px #3339;
+}
+.img {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 50px 0 #64F,
+              0 0 0 7px #64F8;
+  transition: all 300ms;
+}
+@media screen and (max-width: 786px) {
+  .card {
+    margin: 100px 20px auto 20px ;
+  }
+}
+.cnt {
+  margin-top: -35px;
+  padding: 0 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  transition: all 300ms;
+}
+.name {
+  font-weight: 700;
+  font-size: 30px;
+  color: #64F;
+  margin-bottom: 15px;
+}
+.txt {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: 7px;
+}
+i.fa-thumbtack {
+  margin: 0 5px;
+}
+.card-inf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+.item {
+  padding: 10px 35px;
+  min-width: 150px;
+}
+.title {
+  font-weight: 700;
+  font-size: 27px;
+}
+.card-social {
+  margin-top: 25px;
+}
+.card-social a {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.card-social .facebook {
+  background: linear-gradient(45deg, #359, #07D);
+  box-shadow: 0 4px 30px #26A8;
+}
+.card-social .instagram {
+  background: linear-gradient(45deg, #45F, #F11);
+  box-shadow: 0 4px 30px #B449;
+}
+.card-social .youtube {
+  background: linear-gradient(45deg, rgb(222, 3, 3), #F11);
+  box-shadow: 0 4px 30px #B449;
+}
+.card-social .github {
+  background: linear-gradient(45deg, #333, #667);
+  box-shadow: 0 4px 30px #3449;
+}
+a:hover {
+  transform: scale(1.2);
+}
+.card-button {
+  margin-top: 40px;
+}
+button {
+  min-width: 201px;
+  min-height: 55px;
+  margin: 15px 35px;
+  font-size: 19px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.btn-blue {
+  background: linear-gradient(45deg, #1AF, #07C);
+  box-shadow: 0 4px 30px #17D6;
+}
+.btn-orange {
+  background: linear-gradient(45deg, #D15, #D52);
+  box-shadow: 0 4px 30px #D245;
+}
+.btn-blue:hover {
+  box-shadow: 0 4px 30px #17DB;
+}
+.btn-orange:hover {
+  box-shadow: 0 4px 30px #D24B;
+}
+button:hover {
+  transform: translateY(-5px);
+}
+@media screen and (max-width: 576px) {
+  button {
+    margin: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 350px;
+  }
+}
